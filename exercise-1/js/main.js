@@ -17,10 +17,21 @@ var data = [
 // You'll have to wait for you page to load to assign events to the elements created in your index.html file
 $(function() {
   // Select SVG with id `my-svg` and assign it a width of 600 and a height of 100
+  var mySvg = d3.select('#my-svg')
+    .attr('width', 600)
+    .attr('height', 100);
 
   // Define an axis for your scale with the ticks oriented on the bottom
 
+  var scale d3.scale.linear()
+    .domain([7, 10]);
+    .range([0, 600]);
+
+  var axis = d3.mySvg.axis();
+
   // Append a `g` element to your svg, shift it down 50 pixels by setting the transform property, and call your `axis function`
+
+  
 
   // Append a circle for each element in your data by using the standard D3 data binding process
 
