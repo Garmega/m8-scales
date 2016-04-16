@@ -23,13 +23,16 @@ $(function() {
 	var width = 600 - margin.left - margin.right;
 
 	// Append a 'g' element in which to place the circles,
-	var g = svg.append('g');
-
 	// shifted down and right from the top left corner using the margin values
-	g.attr('transform', 'translate(' + margin.left + ',' + margin.right + ')')
+
+	var g = svg.append('g')
+		.attr('transform', 'translate(' + margin.left + ',' + margin.right + ')')
+		.attr('width', width)
+		.attr('height', height);
 
 	// Find minimum and maximum values, then define x (log) and y (linear) scales
 
+	
 
 	// Perform a data-join for your data, creating circle element in your chart `g`
 
